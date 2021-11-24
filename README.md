@@ -1,4 +1,4 @@
-## App De Votação
+## CIPA (Concurso de ideias professor anjo)
 
 <p> Aplicação para auxiliar a votação do proximo concurso de ideias do IFPE</p>
 
