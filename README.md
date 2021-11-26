@@ -11,17 +11,17 @@
 # PAGINA DE CADASTRO
 
 <p align="center">
-<img height="720" src="https://i.imgur.com/tE7b4UZ.jpeg">
+<img height="720" src="https://i.imgur.com/eqibvDR.jpeg">
 </p>
 
 # PAGINA DE LOGIN
 
 <p align="center">
-<img height="720" src="https://i.imgur.com/dO4v6MF.jpg">
+<img height="720" src="https://i.imgur.com/1MYfoUR.jpg">
 </p>
 
 # PAGINA DE INSCREVER O PROJETO
 
 <p align="center">
-<img height="720" src="https://i.imgur.com/wQgl7U8.jpeg">
+<img height="720" src="https://i.imgur.com/AFJx8Xu.jpeg">
 </p>
