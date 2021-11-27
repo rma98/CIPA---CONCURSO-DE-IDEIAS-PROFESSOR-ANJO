@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Import link css-->
+    <link rel="stylesheet" href="css.css">
+    <!-- Import link js-->
+    <link rel="stylesheet" href="js.js">
+</head>
+<body>
+    <div>
+        <form class="form-categoria flow-text">
+            <div class="titulo">
+                <h1><strong>Concurso de Ideias</strong></h1>
+                <p><strong>Por favor insira os <br><br>dados do projeto para se ionscrever.</strong></p>
+            </div>
+            <div class="subtitulos">
+                <label><strong>Nome do Líder</strong></label><br>
+                <input type="text" name="nomeLider" id="nomeLider" size="45" autofocus required>
+            </div>
+            <div class="subtitulos">
+                <label><strong>Nome dos Integrantes</strong></label><br>
+                <input type="text" name="nomeIntegrantes" id="nomeIntegrantes" size="45" autofocus>
+            </div>
+            <div class="subtitulos">
+                <label><strong>CATEGORIA</strong></label>
+                <br>
+                <select name="categoria" id="categoria">
+                    <option value="" disabled selected>SELECIONE UMA CATEGORIA</option>
+                    <option value="1">ERRADIAÇÃO DA POBREZA</option>
+                    <option value="2">FOME ZERO</option>
+                    <option value="3">BOA SAÚDE E BEM-ESTAR</option>
+                    <option value="4">EDUCAÇÃO DE QUALIDADE</option>
+                    <option value="5">IGUALDADE DE GÊNERO</option>
+                    <option value="6">ÁGUA LIMPA E SANIAMENTO</option>
+                    <option value="7">ENERGIA ACESSÍVEL E LIMPA</option>
+                    <option value="8">EMPREGO DIGNO E CRESCIMNENTO ECONÔMICO</option>
+                    <option value="9">INDÚSTRIA, INOVAÇÃO E INFRAESTRUTURA</option>
+                    <option value="10">REDUÇÃO DAS DESIGUALDADES</option>
+                    <option value="11">CIDADES E COMUNIDADES SUSTENTÁVEIS</option>
+                    <option value="12">CONSUMO E PRODUÇÃO RESPONSÁVEIS</option>
+                </select>
+            </div>
+            <div class="subtitulos">
+                <label><strong>Tituto do Projeto</strong></label>
+                <input type="text" name="titulo" id="titulo" size="45" autofocus required>
+            </div>
+            <div class="subtitulos">
+                <label><strong>Link do Vídeo</strong></label>
+                <input type="text" name="linkVideo" id="linkVideo" size="45" autofocus>
+            </div>
+            <div class="subtitulos">
+                <label><strong>DESVREVA SEU PROJETO</strong></label>
+                <textarea maxlength="800" name="descrendoProjeto" id="descrendoProjeto" cols="40" rows="10" required></textarea>
+            </div>
+            <div class="subtitulos">
+                <button class="btn waves-effect waves-light" type="submit" name="action">INSCREVER</button>
+            </div>
+        </form>
+    </div>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
