@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bdc924188.js" crossorigin="anonymous"></script>
     <!--Linkando Alguns Frameworks-->
 
 </head>
@@ -26,22 +27,25 @@
              <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
           <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Seu Email</label>
         </div>
         </div>
           <div class="row">
           <div class="input-field col s6">
           <i class="material-icons prefix">vpn_key</i>
           <input id="icon_prefix2" type="text" class="validate">
-          <label for="icon_prefix2">Sua Senha</label>
         </div>
         </div>
          <div class="row2">
          
-         <button class="btn waves-effect waves-light" type="submit" name="action">LOGAR-SE
+         <button class="btn waves-effect waves-light" type="submit" name="action">ENTRAR
         <i class="material-icons right">send</i>
         </button>   
     </div>  
+    <div class="media-icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-google-plus-g"></i>
+    </div>
                         </div>
                     </div>
                 <div class="division-2">
@@ -61,9 +65,25 @@
     width: 100%;
     height: 100vh;
   }
-  
+  .media-icons{
+    margin-left: 21%;
+    margin-top: 8%;
+  }
+  .media-icons i{
+    font-size: 2.8rem;
+    margin-left: 14%;
+  }
+  .fa-google-plus-g{
+    color:#e34133;
+  }
+  .fa-twitter{
+    color: #00acee;
+  }  
+  .fa-facebook{
+    color: #3b5998;
+  }
   .division-1 {
-    width: 100vh;
+    width:75vh;
   }
   .division-1 img{
     width: 280px;
@@ -85,7 +105,7 @@
     margin-bottom: 6%;
   }
   .texts{
-      margin-left: 22%;
+      margin-left: 23%;
       margin-top: -8%;
   }
   .agroup{
@@ -97,11 +117,11 @@
     width: 100vh;
   }
   .row2{
-    margin-left: 36%!important;
+    margin-left: 42%!important;
   }
   .row2 button{
       background-color: #1B2F49 !important;
-      padding-left: 35px;
+      padding-left: 38px;
       padding-right: 35px;
   }
   
@@ -114,11 +134,17 @@
   }
   .division-2 img{
       width: 680px;
-      margin-top: 17%;
+      margin-top: 1%;
       margin-left: 17%;
   }
-
-  @media (max-width: 600px){
+input{
+  border: solid 0.3vh #1c2c44 !important;
+  text-align: left !important;
+  height: 30px !important;
+  margin-top: 2% !important;
+  border-radius: 5px !important;
+}
+  @media (max-width: 580px){
     .logo{
     margin-bottom: 6%;
   }
@@ -126,8 +152,16 @@
     width: 240px;
     margin-left: 28%;
   }
+  .media-icons{
+    margin-left: 19%;
+    margin-top: 8%;
+  }
+  .media-icons i{
+    font-size: 2.8rem;
+    margin-left: 14%;
+  }
   .texts{
-      margin-left: 19%;
+      margin-left: 21%;
       margin-top:-6%;
   }
   .agroup{
@@ -139,7 +173,7 @@
     width: 100vh;
   }
   .row2{
-    margin-left: 28%!important;
+    margin-left:36%!important;
   }
   .row2 button{
       background-color: #1B2F49 !important;
@@ -150,6 +184,9 @@
       width: 0px;
       margin-top: 17%;
       margin-left: 17%;
+  }
+  .content-index{
+    margin-left:13%;
   }
   }
         </style>
