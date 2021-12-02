@@ -1,14 +1,14 @@
 <template>
-  <categoria/>
+  <Login/>
 </template>
 
 <script>
-import categoria from './components/categoria.vue'
+import Login from './components/Login.vue'
 
 export default {
   name: 'App',
   components: {
-    categoria
+    Login
   }
 }
 </script>
