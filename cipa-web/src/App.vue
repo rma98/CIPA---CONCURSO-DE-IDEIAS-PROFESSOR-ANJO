@@ -1,14 +1,14 @@
 <template>
-  <Login/>
+  <cadastro/>
 </template>
 
 <script>
-import Login from './components/Login.vue'
+import cadastro from './components/cadastro.vue'
 
 export default {
   name: 'App',
   components: {
-    Login
+    cadastro
   }
 }
 </script>
