@@ -1,14 +1,14 @@
 <template>
-  <cadastro/>
+  <tela-principal/>
 </template>
 
 <script>
-import cadastro from './components/cadastro.vue'
+import tela-principal from './components/tela/principal.vue'
 
 export default {
   name: 'App',
   components: {
-    cadastro
+    tela-principal
   }
 }
 </script>
