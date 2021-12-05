@@ -1,14 +1,14 @@
 <template>
-  <tela-principal/>
+  <home/>
 </template>
 
 <script>
-import tela-principal from './components/tela/principal.vue'
+import home from './components/home.vue'
 
 export default {
   name: 'App',
   components: {
-    tela-principal
+    home
   }
 }
 </script>
