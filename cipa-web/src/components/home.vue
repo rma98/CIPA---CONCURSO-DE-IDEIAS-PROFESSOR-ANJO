@@ -11,31 +11,62 @@
   </nav>
 <div class="card-group">
   <div class="card" style="width: 18rem;">
-  <img class="" src="https://i.imgur.com/N2uQg4X.png" style="width: 10vw;" alt="Card image cap">
+  <img class="" src="https://blog.handtalk.me/wp-content/uploads/2018/11/capa-blog-2.png" style="width: 15vw;" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Votar</a>
+    <a href="#" class="btn btn-primary">Leia mais</a>
   </div>
 </div>
   <div class="card" style="width: 18rem;">
-  <img class="" src="https://i.imgur.com/N2uQg4X.png" style="width: 10vw;" alt="Card image cap">
+  <img class="" src="https://blog.handtalk.me/wp-content/uploads/2018/11/capa-blog-2.png" style="width: 15vw;" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary">Votar</a>
+    <a href="#" class="btn btn-primary">Leia mais</a>
   </div>
 </div>
   <div class="card" style="width: 18rem;">
-  <img class="" src="https://i.imgur.com/N2uQg4X.png" style="width: 10vw;" alt="Card image cap">
+  <img class="" src="https://blog.handtalk.me/wp-content/uploads/2018/11/capa-blog-2.png" style="width: 15vw;" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Votar</a>
+    <a href="#" class="btn btn-primary">Leia mais</a>
   </div>
 </div>
 </div>
-
+<div class="card-group">
+  <div class="card" style="width: 18rem;">
+  <img class="" src="https://blog.handtalk.me/wp-content/uploads/2018/11/capa-blog-2.png" style="width: 15vw;" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Votar</a>
+    <a href="#" class="btn btn-primary">Leia mais</a>
+  </div>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img class="" src="https://blog.handtalk.me/wp-content/uploads/2018/11/capa-blog-2.png" style="width: 15vw;" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Votar</a>
+    <a href="#" class="btn btn-primary">Leia mais</a>
+  </div>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img class="" src="https://blog.handtalk.me/wp-content/uploads/2018/11/capa-blog-2.png" style="width: 15vw;" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Votar</a>
+    <a href="#" class="btn btn-primary">Leia mais</a>
+  </div>
+</div>
+</div>
 </template>
 
 <script>
@@ -76,6 +107,10 @@ a:hover{
 .btn-primary{
   margin-bottom: 3%!important;
   margin-top: 3%!important;
+  margin-left: 4%!important;
+  background-color: #4C6FFF!important;
+  padding-left: 10px!important;
+    padding-right: 10px!important;
 }
 .card-group{
   display: flex;
