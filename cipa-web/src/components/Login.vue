@@ -10,13 +10,13 @@
       <div class="row">
              <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
-          <input id="icon_prefix" type="text" class="validate" placeholder="Digite seu Email:">
+          <input id="icon_prefix" type="text" class="validate" placeholder="Digite seu email:">
         </div>
         </div>
           <div class="row">
           <div class="input-field col s6">
           <i class="material-icons prefix">vpn_key</i>
-          <input id="icon_prefix2" type="text" class="validate">
+          <input id="icon_prefix2" type="text" class="validate" placeholder="Digite sua senha:">
         </div>
         </div>
          <div class="row2">
@@ -34,6 +34,9 @@
                     </div>
                 <div class="division-2">
                     <img src="undraw_product_teardown_elol-removebg-preview.png">
+                  <h1 class="titulo">CIPA</h1>
+                  <p class="subtitulo">Concurso de ideias<br>
+ professor anjo</p>
             </div>
         </div>
 </template>
@@ -49,7 +52,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-          @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&family=Rubik+Mono+One&display=swap');;
+
             * {
     margin: 0;
     padding: 0;
@@ -72,6 +76,11 @@ export default {
     margin-left: -11%;
     margin-top: 12%;
   }
+  .subtitulo{
+    font-family: 'Rubik', sans-serif;
+    font-size: 46px;
+    text-shadow: 4px 4px 4px #000000;
+    }
   .media-icons i{
     font-size: 2.8rem;
     margin-left: 14%;
@@ -86,7 +95,7 @@ export default {
     color: #3b5998;
   }
   .division-1 {
-    width:85vh;
+    width:45vw;
   }
   .division-1 img{
     width: 280px;
@@ -133,12 +142,17 @@ export default {
   .division-2 {
     background-color: #CDDAE2;
     margin-top: -4%;
-    width: 115vh;
+    width: 90vw;
   }
   .division-2 img{
       width: 680px;
-      margin-top: 15%;
+      margin-top: 4%;
       margin-left: 12%;
+  }
+  .titulo{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 86px;
+    margin-top: -4%;
   }
 input{
   border: solid 0.3vh #1c2c44 !important;
