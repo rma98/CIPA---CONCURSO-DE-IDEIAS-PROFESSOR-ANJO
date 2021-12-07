@@ -1,14 +1,14 @@
 <template>
-  <inscricaoProjeto/>
+  <cadastro/>
 </template>
 
 <script>
-import inscricaoProjeto from './components/inscricaoProjeto.vue'
+import cadastro from './components/cadastro.vue'
 
 export default {
   name: 'App',
   components: {
-    inscricaoProjeto
+    cadastro
   }
 }
 </script>

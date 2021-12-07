@@ -2,6 +2,7 @@
 <div >
 <div class="tela"><img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://i.imgur.com/EUoiruM.png" alt="Image" height="705" width="660"></div>
 <form class="forma">
+<a  id ="vlr" class="waves-effect waves-light vlr"><i class="material-icons left">keyboard_backspace</i></a>
 <img class="img form-baixar" style="-webkit-user-select: none;margin: auto;transition: " src="https://i.imgur.com/HcLNjzn.png">
 <div class="mergir">
 <div class="global">
@@ -33,11 +34,11 @@
      <br><br>
 
     <a class="waves-effect waves-light btn" style="background:#1c2c44">CADASTRAR</a>
-    você já tem uma conta? <a href="login.html"> Entre</a>
+    
     
     
     </div>
-    <a  id ="vlr" class="waves-effect waves-light vlr"><i class="material-icons left">keyboard_backspace</i></a>
+    
     
 </div>
 </form>
@@ -64,6 +65,9 @@ input,
 button {
   font-family: 'Poppins', sans-serif;
 }
+#entre{
+
+}
 
 .tela {
   position: absolute;
@@ -85,7 +89,7 @@ button {
 }
 
 #p {
-  margin-top: 17px;
+  margin-top: 3px;
 }
 
 #inp {
@@ -99,14 +103,14 @@ button {
 .btn {
   background: #1c2c44;
   margin-left: 1%;
-  margin-top: -35px;
-  border-radius: 10px;
+  margin-top: -35%;
+  border-radius: 5px;
   width: 305px;
 
 }
 
 .global {
-  margin-left: 17%;
+  margin-left: 15%;
   margin-right: 28%;
 }
 
@@ -115,11 +119,11 @@ button {
   border: solid 1px #1c2c44;
   width: 450px;
   margin-left: 35%;
-  margin-top: 13%;
+  margin-top: 4.5%;
 }
 
 .img {
-  height: 175px;
+  height: 250px;
   border-radius: 100px;
   display: block;
   padding-top: 20px;
@@ -134,13 +138,20 @@ button {
 }
 
 #global {
-  margin-left: 17%;
+  margin-left: 15%;
   margin-right: 28%;
 }
 
 #vlr {
   Width: 200px;
   Margin-top: 15px;
+  margin-left:2%;
+ 
+}
+h4{
+  font-size: 2.28rem;
+    line-height: 110%;
+    margin: -1.48rem 0 .912rem 0;
 }
 
 </style>
