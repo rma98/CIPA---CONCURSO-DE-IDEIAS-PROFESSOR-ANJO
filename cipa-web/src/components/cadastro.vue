@@ -1,5 +1,6 @@
 <template>
 <div >
+
 <div class="tela"><img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://i.imgur.com/EUoiruM.png" alt="Image" height="705" width="660"></div>
 <form class="forma">
 <a  id ="vlr" class="waves-effect waves-light vlr"><i class="material-icons left">keyboard_backspace</i></a>
@@ -42,7 +43,9 @@
     
 </div>
 </form>
+<div id="pictures"><img id="pictures" style="background: gray; border:gray;" src="https://i.imgur.com/EUoiruM.png"></div>
 </div>
+
 </template>
 
 <script>
@@ -118,7 +121,7 @@ button {
   background: white;
   border: solid 1px #1c2c44;
   width: 450px;
-  margin-left: 35%;
+  margin-left: 26%;
   margin-top: 4.5%;
 }
 
@@ -152,6 +155,14 @@ h4{
   font-size: 2.28rem;
     line-height: 110%;
     margin: -1.48rem 0 .912rem 0;
+}
+
+#pictures{
+  width:54%;
+  height:762px;
+  margin-top:-26%;
+  margin-left:32.2%; 
+
 }
 
 </style>
