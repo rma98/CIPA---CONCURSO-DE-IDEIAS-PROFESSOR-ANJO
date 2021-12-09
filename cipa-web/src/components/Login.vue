@@ -73,14 +73,14 @@ export default {
     height: 100vh;
   }
   .media-icons{
-    margin-left: 12%;
-    margin-top: 12%;
+    margin-left: 20%;
+    margin-top: 26%;
   }
   .subtitulo{
     font-family: 'Rubik', sans-serif;
     font-size: 47px;
     text-shadow: 4px 4px 4px #000000;
-    margin-left: 24%;
+    margin-left: 30%;
     }
   .media-icons i{
     font-size: 2.8rem;
@@ -131,7 +131,7 @@ export default {
     width: 100vh;
   }
   .row2{
-    margin-left: 36%!important;
+    margin-left: 42%!important;
     margin-top: 5%;
   }
   .row2 button{
@@ -147,14 +147,14 @@ export default {
   }
   .division-2 img{
       width: 680px;
-      margin-top: 8%;
-      margin-left: 12%;
+      margin-top: 13%;
+      margin-left: 15%;
   }
   .titulo{
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 86px;
     margin-top: -4%;
-    margin-left: 28%!important;
+    margin-left: 32%!important;
   }
 input{
   border: solid 0.3vh #1c2c44 !important;
