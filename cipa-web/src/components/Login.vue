@@ -78,7 +78,7 @@ export default {
   }
   .subtitulo{
     font-family: 'Rubik', sans-serif;
-    font-size: 46px;
+    font-size: 47px;
     text-shadow: 4px 4px 4px #000000;
     margin-left: 24%;
     }
