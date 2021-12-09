@@ -73,13 +73,14 @@ export default {
     height: 100vh;
   }
   .media-icons{
-    margin-left: -11%;
+    margin-left: 12%;
     margin-top: 12%;
   }
   .subtitulo{
     font-family: 'Rubik', sans-serif;
     font-size: 46px;
     text-shadow: 4px 4px 4px #000000;
+    margin-left: 24%;
     }
   .media-icons i{
     font-size: 2.8rem;
@@ -99,7 +100,7 @@ export default {
   }
   .division-1 img{
     width: 280px;
-    margin-left: 2%;
+    margin-left: 34%;
   }
   .texts p{
       font-family: 'Poppins', Arial;
@@ -130,7 +131,7 @@ export default {
     width: 100vh;
   }
   .row2{
-    margin-left: 5%!important;
+    margin-left: 36%!important;
     margin-top: 5%;
   }
   .row2 button{
@@ -153,6 +154,7 @@ export default {
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 86px;
     margin-top: -4%;
+    margin-left: 28%!important;
   }
 input{
   border: solid 0.3vh #1c2c44 !important;
