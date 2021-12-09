@@ -147,7 +147,7 @@ export default {
   }
   .division-2 img{
       width: 680px;
-      margin-top: 4%;
+      margin-top: 8%;
       margin-left: 12%;
   }
   .titulo{
