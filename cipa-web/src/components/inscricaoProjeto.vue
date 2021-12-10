@@ -1,26 +1,47 @@
 <template>
-<div> 
-  <form id="categoria" class="form-categoria flow-text">
-    <div class="titulo">
+  <div>
+    <form class="form-inscricao-projeto flow-text">
+      <img src="https://i.imgur.com/HcLNjzn.png">
+      <div class="titulo">
         <h1>
-        Concurso de Ideias
+          <strong>
+            Bem vindo ao CIPA.
+          </strong>
         </h1>
-        <P>
-          <strong>Por favor insira os <br> dados do projeto para se inscrever.</strong>
-        </P>
-    </div>
-    <div class="subtitulos">
-      <label><strong>Nome do Líder</strong></label><br>
-      <input type="text" name="nomeLider" id="nomeLider" size="45" autofocus required>
-    </div>
-    <div class="subtitulos">
-      <label><strong>Nome dos Integrantes</strong></label><br>
-      <input type="text" name="nomeIntegrantes" id="nomeLider" size="45" autofocus>
-    </div>
-    <div class="subtitulos">
-      <label><strong>CATEGORIA</strong></label>
-      <br>
-      <select>
+      </div>
+      <div class="paragrafo">
+        <p>
+          Por favor insira os dados
+        </p>
+      </div>
+      <div id="cont-paragrafo">
+        <p>
+          do projeto para se inscrever.
+        </p>
+      </div>
+      <div class="subtitulos">
+        <label>
+          Nome do Líder:
+        </label>
+      </div>
+      <div class="sub-inputs">
+        <input type="text" name="nomeLider" required>
+      </div>
+      <div class="subtitulos">
+        <label>
+          Nome dos integrantes (Separar nome dos integrantes por vírgula)
+        </label>
+      </div>
+      <div class="sub-inputs">
+        <input type="text" name="nomeIntegrantes">
+      </div>
+      <div select-categoria>
+        <label id="cat-titulo">
+          Categoria
+        </label>
+      </div>  
+      <div class="select-use">
+        <select>
         <option value="" disabled selected>SELECIONE UMA CATEGORIA</option>
         <option value="1">ERRADIAÇÃO DA POBREZA</option>
         <option value="2">FOME ZERO</option>
@@ -35,25 +56,36 @@
         <option value="11">CIDADES E COMUNIDADES SUSTENTÁVEIS</option>
         <option value="12">CONSUMO E PRODUÇÃO RESPONSÁVEIS</option>
       </select>
+      </div>
+      <div class="subtitulos">
+      <label>
+        Título do projeto:
+      </label>
+    </div>
+    <div class="sub-inputs">
+      <input type="text" name="titulo" required>
     </div>
     <div class="subtitulos">
-      <label><strong>Tituto do Projeto</strong></label>
-      <input type="text" name="titulo" id="nomeLider" size="45" autofocus required>
+      <label>
+        Link do vídeo: (Opcional)
+      </label>
+    </div>
+    <div class="sub-inputs">
+      <input type="text" name="linkVideo">
     </div>
     <div class="subtitulos">
-      <label><strong>Link do Vídeo</strong></label>
-      <input type="text" name="linkVideo" id="nomeLider" size="45" autofocus>
+      <label>
+        DESCREVA SEU PROJETO:
+      </label>
     </div>
-    <div class="subtitulos">
-      <label><strong>DESVREVA SEU PROJETO</strong></label>
-      <textarea maxlength="800" name="descrendoProjeto" id="nomeLider" cols="40" rows="10" required></textarea>
+    <div class="descricao">
+      <textarea maxlength="800" name="descrendoProjeto" cols="80" rows="12" required></textarea>
     </div>
-    <div class="subtitulos">
-      <button  class="btn waves-effect waves-light" type="submit" name="action" id="btn">INSCREVER
-  </button>
+    <div class="botao">
+      <button class="btn waves-effect waves-light" type="submit" name="action">INSCREVER </button>
     </div>
-  </form>
-</div>
+    </form>  
+  </div>
 </template>
 
 <script>
@@ -68,117 +100,81 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
-html,
-body,
-table,
-input,
-button {
+html, body, input, select, button {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-.form-categoria {
-  display: block;
-  border: solid 1px #1c2c44;
-  width: 50vw;
-  height:94vh;
+.form-inscricao-projeto, .flow-text {
+  border: solid 1px #1B2F49;
+  width: 55vw;
+  height: 154vh;
+}
+img {
+  width: 20vw;
   margin-left: 25%;
-  margin-top: 2%;
 }
-
 .titulo {
-  color: #1B2F49       ;
+  color: #1B2F49;
 }
-
-.titulo h1 {
-  font-size: 4.2rem;
-    line-height: 110%;
-    margin: 3.8rem 0 1.68rem 0;
-    margin-left: 22%;
-    
+.titulo, h1 {
+  font-size: 30pt;
+  margin-top: -5%;
+  margin-left: 11%;
 }
-
-.titulo p {
-  margin-left:6%;
-  margin-top:12%;
+.paragrafo {
+  color: #1B2F49;
 }
-
-.subtitulos{
-    margin-left:5%;
-     border-radius: 2%;
-    
+.paragrafo p {
+  font-size: 30pt;
+  margin-top: -3%;
+  margin-left: 18%;
 }
-
-label {
-  color: #1B2F49
+#cont-paragrafo {
+  color: #1B2F49;
+  font-size: 30pt;
+  margin-top: -5%;
+  margin-left: 18%;
 }
-
-input {
-    display: block;
-    
-    background: #1c2c44;
-    color: #ffffff;
-    border-radius: 10px;
+.subtitulos label {
+  color: #1B2F49;
+  font-size: 20pt;
+  margin-left: 18%;
 }
-
-select {
-    display: block;
-    background: #1c2c44;
-    color: #ffffff;
-    border-radius: 10px;
+.sub-inputs input {
+  color: #1B2F49;
+  width: 32vw;
+  height: 6vh;
+  margin-top: 6px;
+  margin-left: 18%;
+  margin-bottom: 3%;
+  border: solid 1px #1B2F49;  
 }
-
-.btn {  
-    display: block;
-    width: 20vw;
-    height: 5vh ;
-    margin-left: 5%;
-    background: #1c2c44;
-    color: #ffffff;
-    border-radius: 10px;
+#cat-titulo {
+  color: #1B2F49;
+  font-size: 20pt;
+  margin-left: 20%;
 }
-#nomeLider{
-    border-radius: 2%;
-    border:1px solid  #1c2c44;
-    color: #1c2c44;
-    width:90%;
-    margin-left:0.3%;   
-
+.select-use select{
+  color: #1B2F49;
+  width: 20vw;
+  height: 6vh;
+  margin-top: 6px;
+  margin-left: 18%;
+  margin-bottom: 3%;
+  border: solid 1px #1B2F49; 
 }
-#categoria{
-    height:1024px;
+.descricao {
+  color: #1B2F49;
+  margin-top: 6px;
+  margin-left: 18%;
 }
- 
- #btn{
-   border:1px solid  #1c2c44;
-    color: #ffffff;
-    width:90%;
-    margin-left:0.3%;
-    font-size:32px;  
-    margin-top:5%;
-    border-radius: 2%;
-    
- }
-
- strong {
-    font-weight: 500;
-    font-size:22px;
-}
-
-h1{
-    font-weight: 500;
-    display:block;
-    padding-top: 25px;
-    margin-left:-35%;
-    
-}
-
-select{
-    border-radius: 2%;
-    width:90%;
-}
-
-div.titulo{
-    margin-top:5px;
-    padding: 5px;
+.btn {
+  background: #1B2F49;
+  color: #ffffff;
+  width: 32vw;
+  height: 8vh;
+  margin-top: 6px;
+  margin-left: 18%;
 }
 </style>
