@@ -1,13 +1,9 @@
 <template>
-<div >
-
-<div class="tela"><img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://i.imgur.com/EUoiruM.png" alt="Image" height="705" width="660"></div>
+<div class="Principal">
+  <div class="content1">
 <form class="forma">
-<a  id ="vlr" class="waves-effect waves-light vlr"><i class="material-icons left">keyboard_backspace</i></a>
-<img class="img form-baixar" style="-webkit-user-select: none;margin: auto;transition: " src="https://i.imgur.com/HcLNjzn.png">
-<div class="mergir">
+<img class="img form-baixar" src="https://i.imgur.com/HcLNjzn.png">
 <div class="global">
-
 <h4 class="color">
      Olá!
      </h4>
@@ -39,12 +35,13 @@
     
     
     </div>
-    
-    
-</div>
 </form>
-<div id="pictures"><img id="pictures" style="background: gray; border:gray;" src="https://i.imgur.com/EUoiruM.png"></div>
-</div>
+    </div>
+<div class="content2" style="background:#CDDAE2;">
+  <img id="pictures" src="https://i.imgur.com/EUoiruM.png">
+  </div>
+  </div>
+
 
 </template>
 
@@ -71,16 +68,17 @@ button {
 #entre{
 
 }
-
+body{
+  width: 100vw;
+}
 .tela {
-  position: absolute;
-  left: 115%;
-  top: 75%;
-  margin-left: -12.5%;
-  margin-top: -85.5%;
+ margin-left: -20%;
   
 }
-
+.img{
+      width: 280px;
+      margin-left: 24%;
+}
 .color {
   color: #1c2c44;
   font-weight: bold;
@@ -119,19 +117,21 @@ button {
 
 .forma {
   background: white;
-  border: solid 1px #1c2c44;
   width: 450px;
-  margin-left: 26%;
-  margin-top: 4.5%;
+  margin-left: 14%;
 }
 
-.img {
-  height: 250px;
-  border-radius: 100px;
-  display: block;
-  padding-top: 20px;
+.Principal{
+  display: flex;
 }
-
+.content1{
+  width: 70vw;
+  height: 70vh;
+}
+.content2{
+  width: 70vw;
+  height: 100vh;
+}
 .smh {
   color: #1c2c44;
 }
@@ -158,11 +158,9 @@ h4{
 }
 
 #pictures{
-  width:54%;
-  height:762px;
-  margin-top:-26%;
-  margin-left:32.2%; 
-
+  width: 680px;
+   margin-top: 4%;
+  margin-left: 4%;
 }
 
 </style>

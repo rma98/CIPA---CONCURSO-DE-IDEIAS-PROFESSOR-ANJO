@@ -40,8 +40,7 @@
           Categoria
         </label>
       </div>  
-      <div class="select-use">
-        <select>
+  <select class="browser-default">
         <option value="" disabled selected>SELECIONE UMA CATEGORIA</option>
         <option value="1">ERRADIAÇÃO DA POBREZA</option>
         <option value="2">FOME ZERO</option>
@@ -56,7 +55,6 @@
         <option value="11">CIDADES E COMUNIDADES SUSTENTÁVEIS</option>
         <option value="12">CONSUMO E PRODUÇÃO RESPONSÁVEIS</option>
       </select>
-      </div>
       <div class="subtitulos">
       <label>
         Título do projeto:
