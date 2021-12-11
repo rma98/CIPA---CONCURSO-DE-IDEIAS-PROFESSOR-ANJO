@@ -3,8 +3,8 @@
 <div class="division-1">
     <img src="https://i.imgur.com/HcLNjzn.png" class="logo">
     <div class="texts">
-        <p><mark>Olá</mark><br>por favor insira os dados<br>
-        do projeto para se inscrever.</p>
+        <p><mark>Olá</mark><br>por favor insira os seus dados<br>
+        para entrar.</p>
     </div>
     <div class="agroup">
       <div class="row">
