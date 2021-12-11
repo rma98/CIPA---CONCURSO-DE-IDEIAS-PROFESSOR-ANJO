@@ -73,8 +73,8 @@ export default {
     height: 100vh;
   }
   .media-icons{
-    margin-left: 20%;
-    margin-top: 26%;
+    margin-left: 15%;
+    margin-top: 15%;
   }
   .subtitulo{
     font-family: 'Rubik', sans-serif;
@@ -96,7 +96,7 @@ export default {
     color: #3b5998;
   }
   .division-1 {
-    width:45vw;
+    width:40vw;
   }
   .division-1 img{
     width: 280px;
@@ -131,7 +131,7 @@ export default {
     width: 100vh;
   }
   .row2{
-    margin-left: 42%!important;
+    margin-left: 38%!important;
     margin-top: 5%;
   }
   .row2 button{
@@ -143,11 +143,12 @@ export default {
   .division-2 {
     background-color: #CDDAE2;
     margin-top: -4%;
-    width: 90vw;
+    width: 100vw;
+    height:113vh;
   }
   .division-2 img{
       width: 680px;
-      margin-top: 13%;
+      margin-top: 6%;
       margin-left: 15%;
   }
   .titulo{
