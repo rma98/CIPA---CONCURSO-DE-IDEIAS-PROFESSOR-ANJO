@@ -70,7 +70,7 @@ export default {
     font-size: 14px;
   }
   .forgot-pass{
-    margin-left:58%;
+    margin-left:57%;
   }
   .has-login p{
         color: black;
