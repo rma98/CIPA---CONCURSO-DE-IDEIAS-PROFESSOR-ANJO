@@ -19,12 +19,18 @@
           <input id="icon_prefix2" type="text" class="validate" placeholder="Digite sua senha:">
         </div>
         </div>
+            <div class="forgot-pass"> 
+      <p>Esqueceu sua senha?</p>
+    </div>
          <div class="row2">
          
          <button class="btn waves-effect waves-light" type="submit" name="action">ENTRAR
         <i class="material-icons right">send</i>
         </button>   
     </div>  
+                <div class="has-login"> 
+      <p>Não tem uma conta? <mark>Cadastre-se.</mark></p>
+    </div>
     <div class="media-icons">
       <i class="fa-brands fa-facebook"></i>
       <i class="fa-brands fa-twitter"></i>
@@ -58,6 +64,30 @@ export default {
     margin: 0;
     padding: 0;
   }
+  .forgot-pass p{
+    color: #000080;
+    font-family: 'Poppins', Arial;
+    font-size: 14px;
+  }
+  .forgot-pass{
+    margin-left:58%;
+  }
+  .has-login p{
+        color: black;
+    font-family: 'Poppins', Arial;
+    font-size: 14px;
+  }
+  .has-login mark{
+    background-color: transparent;
+    color: #000080;
+    font-family: 'Poppins', Arial;
+    font-size: 14px;
+    font-weight: 800;
+  }
+  .has-login{
+    margin-left: 45%;
+    margin-top: 2%;
+  }
   html{
     padding: 0;
     margin: 0;
@@ -73,8 +103,8 @@ export default {
     height: 100vh;
   }
   .media-icons{
-    margin-left: 15%;
-    margin-top: 15%;
+    margin-left: 20%;
+    margin-top: 12%;
   }
   .subtitulo{
     font-family: 'Rubik', sans-serif;
@@ -96,7 +126,7 @@ export default {
     color: #3b5998;
   }
   .division-1 {
-    width:40vw;
+    width:43.3vw;
   }
   .division-1 img{
     width: 280px;
@@ -131,13 +161,13 @@ export default {
     width: 100vh;
   }
   .row2{
-    margin-left: 38%!important;
-    margin-top: 5%;
+    margin-left: 42%!important;
+    margin-top: 3%;
   }
   .row2 button{
       background-color: #1B2F49 !important;
-      padding-left: 38px;
-      padding-right: 35px;
+      padding-left: 45px;
+      padding-right: 45px;
   }
   
   .division-2 {
