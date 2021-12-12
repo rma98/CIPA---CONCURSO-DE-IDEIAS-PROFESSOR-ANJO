@@ -85,7 +85,7 @@ export default {
     font-weight: 800;
   }
   .has-login{
-    margin-left: 45%;
+    margin-left: 43%;
     margin-top: 2%;
   }
   html{
