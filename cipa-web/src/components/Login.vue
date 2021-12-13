@@ -59,10 +59,10 @@ export default {
   methods: {
     logar () { 
       if(!this.email.endsWith('discente.ifpe.edu.br')){
-        alert("Apenas email do IFPE");
+        alert("Apenas email do IFPE!");
       }
         else if(this.email == 'admin@discente.ifpe.edu.br' && this.senha == '12345'){
-        alert('Logado com sucesso');
+        alert('Logado com sucesso!');
         this.$router.push('/');
       }
       else{
