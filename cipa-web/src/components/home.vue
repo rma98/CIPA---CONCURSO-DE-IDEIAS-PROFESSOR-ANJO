@@ -5,7 +5,8 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="sass.html">Inicio</a></li>
         <li><a href="badges.html">Projetos</a></li>
-        <li><a href="collapsible.html">Inscrever</a></li>
+        <li><a v-on:click="irParaInscricao()" href="#">Inscrever</a></li>
+        <li style="float: right; position: absolute; right: 10px;"><a v-on:click="sair()" href="#">Sair</a></li>
       </ul>
     </div>
   </nav>
@@ -74,7 +75,15 @@ export default {
   name: 'home',
   props: {
     msg: String
-  }
+  },
+  methods: {
+    sair() {
+      this.$router.push('/login');
+    },
+    irParaInscricao() {
+      this.$router.push('/inscricaoProjeto');
+    }
+  },
 }
 </script>
 
