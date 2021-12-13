@@ -10,13 +10,13 @@
       <div class="row">
              <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
-          <input id="icon_prefix" type="text" class="validate" placeholder="Digite seu email:">
+          <input id="login" v-bind:class="{'error' : !this.email.endsWith('discente.ifpe.edu.br')}" v-model="email" type="email" class="validate" placeholder="Digite seu email:">
         </div>
         </div>
           <div class="row">
           <div class="input-field col s6">
           <i class="material-icons prefix">vpn_key</i>
-          <input id="icon_prefix2" type="text" class="validate" placeholder="Digite sua senha:">
+          <input id="senha" v-model="senha" type="password" class="validate" placeholder="Digite sua senha:">
         </div>
         </div>
             <div class="forgot-pass"> 
@@ -24,12 +24,12 @@
     </div>
          <div class="row2">
          
-         <button class="btn waves-effect waves-light" type="submit" name="action">ENTRAR
+         <button v-on:click="logar()" :disabled="!email || !senha" class="btn waves-effect waves-light" type="submit" name="action">ENTRAR
         <i class="material-icons right">send</i>
         </button>   
     </div>  
                 <div class="has-login"> 
-      <p>Não tem uma conta? <mark>Cadastre-se.</mark></p>
+      <p>Não tem uma conta? <a v-on:click="cadastre()">Cadastre-se.</a></p>
     </div>
     <div class="media-icons">
       <i class="fa-brands fa-facebook"></i>
@@ -49,10 +49,30 @@
 
 <script>
 export default {
-  name: 'Login',
-  props: {
-    msg: String
-  }
+  name: 'login',
+  data() {
+    return {
+      email: '',
+      senha: '',
+    }
+  },
+  methods: {
+    logar () { 
+      if(!this.email.endsWith('discente.ifpe.edu.br')){
+        alert("Apenas email do IFPE");
+      }
+        else if(this.email == 'admin@discente.ifpe.edu.br' && this.senha == '12345'){
+        alert('Logado com sucesso');
+        this.$router.push('/');
+      }
+      else{
+        alert('Login ou senha incorreto!!!')
+      }
+    },
+    cadastre(){
+      this.$router.push('cadastro')
+    }
+  },
 }
 </script>
 
@@ -77,12 +97,14 @@ export default {
     font-family: 'Poppins', Arial;
     font-size: 14px;
   }
-  .has-login mark{
+  .has-login a{
     background-color: transparent;
     color: #000080;
     font-family: 'Poppins', Arial;
     font-size: 14px;
     font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
   }
   .has-login{
     margin-left: 43%;
@@ -96,7 +118,9 @@ export default {
     margin: 0;
     padding: 0;
   }
-  
+  .error{
+    border: 1px solid red!important;
+  }
   .content-index {
     display: flex;
     width: 100%;
@@ -143,6 +167,7 @@ export default {
       color: #1B2F49;
       font-weight: bold;
       font-size: 26px;
+      cursor: pointer;
 
   }
   .logo{
