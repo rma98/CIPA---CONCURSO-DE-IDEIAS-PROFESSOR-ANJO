@@ -29,7 +29,7 @@
         </button>   
     </div>  
                 <div class="has-login"> 
-      <p>Não tem uma conta? <mark>Cadastre-se.</mark></p>
+      <p>Não tem uma conta? <a v-on:click="cadastre()">Cadastre-se.</a></p>
     </div>
     <div class="media-icons">
       <i class="fa-brands fa-facebook"></i>
@@ -68,6 +68,9 @@ export default {
       else{
         alert('Login ou senha incorreto!!!')
       }
+    },
+    cadastre(){
+      this.$router.push('cadastro')
     }
   },
 }
@@ -94,12 +97,14 @@ export default {
     font-family: 'Poppins', Arial;
     font-size: 14px;
   }
-  .has-login mark{
+  .has-login a{
     background-color: transparent;
     color: #000080;
     font-family: 'Poppins', Arial;
     font-size: 14px;
     font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
   }
   .has-login{
     margin-left: 43%;
@@ -162,6 +167,7 @@ export default {
       color: #1B2F49;
       font-weight: bold;
       font-size: 26px;
+      cursor: pointer;
 
   }
   .logo{
