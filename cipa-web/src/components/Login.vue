@@ -10,7 +10,7 @@
       <div class="row">
              <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
-          <input id="login" v-bind:class="{'error' : !this.email.endsWith('discente.ifpe.edu.br')}" v-model="email" type="email" class="validate" placeholder="Digite seu email:">
+          <input id="login" v-bind:class="{'error' : !this.email.endsWith('discente.ifpe.edu.br')}"  v-model="email" type="email" class="validate" placeholder="Digite seu email:">
         </div>
         </div>
           <div class="row">
