@@ -66,7 +66,7 @@ export default {
         this.$router.push('/');
       }
       else{
-        alert('Login ou senha incorreto!!!')
+        alert('Login ou senha incorreto!')
       }
     },
     cadastre(){
