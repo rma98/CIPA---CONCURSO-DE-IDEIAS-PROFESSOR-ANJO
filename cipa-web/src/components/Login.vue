@@ -10,7 +10,7 @@
       <div class="row">
              <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
-          <input id="login" v-bind:class="{'error' : !this.email.endsWith('discente.ifpe.edu.br')}" v-model="email" type="email" class="validate" placeholder="Digite seu email:">
+          <input id="login" v-bind:class="{'error' : !this.email.endsWith('discente.ifpe.edu.br')}"  v-model="email" type="email" class="validate" placeholder="Digite seu email:">
         </div>
         </div>
           <div class="row">
@@ -59,14 +59,14 @@ export default {
   methods: {
     logar () { 
       if(!this.email.endsWith('discente.ifpe.edu.br')){
-        alert("Apenas email do IFPE");
+        alert("Apenas email do IFPE!");
       }
         else if(this.email == 'admin@discente.ifpe.edu.br' && this.senha == '12345'){
-        alert('Logado com sucesso');
+        alert('Logado com sucesso!');
         this.$router.push('/');
       }
       else{
-        alert('Login ou senha incorreto!!!')
+        alert('Login ou senha incorreto!')
       }
     },
     cadastre(){
