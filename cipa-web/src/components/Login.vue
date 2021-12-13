@@ -10,13 +10,13 @@
       <div class="row">
              <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
-          <input id="icon_prefix" type="text" class="validate" placeholder="Digite seu email:">
+          <input id="login" v-bind:class="{'error' : !this.email.endsWith('discente.ifpe.edu.br')}" v-model="email" type="email" class="validate" placeholder="Digite seu email:">
         </div>
         </div>
           <div class="row">
           <div class="input-field col s6">
           <i class="material-icons prefix">vpn_key</i>
-          <input id="icon_prefix2" type="text" class="validate" placeholder="Digite sua senha:">
+          <input id="senha" v-model="senha" type="password" class="validate" placeholder="Digite sua senha:">
         </div>
         </div>
             <div class="forgot-pass"> 
@@ -24,7 +24,7 @@
     </div>
          <div class="row2">
          
-         <button class="btn waves-effect waves-light" type="submit" name="action">ENTRAR
+         <button v-on:click="logar()" :disabled="!email || !senha" class="btn waves-effect waves-light" type="submit" name="action">ENTRAR
         <i class="material-icons right">send</i>
         </button>   
     </div>  
@@ -49,10 +49,27 @@
 
 <script>
 export default {
-  name: 'Login',
-  props: {
-    msg: String
-  }
+  name: 'login',
+  data() {
+    return {
+      email: '',
+      senha: '',
+    }
+  },
+  methods: {
+    logar () { 
+      if(!this.email.endsWith('discente.ifpe.edu.br')){
+        alert("Apenas email do IFPE");
+      }
+        else if(this.email == 'admin@discente.ifpe.edu.br' && this.senha == '12345'){
+        alert('Logado com sucesso');
+        this.$router.push('/');
+      }
+      else{
+        alert('Login ou senha incorreto!!!')
+      }
+    }
+  },
 }
 </script>
 
@@ -96,7 +113,9 @@ export default {
     margin: 0;
     padding: 0;
   }
-  
+  .error{
+    border: 1px solid red!important;
+  }
   .content-index {
     display: flex;
     width: 100%;
