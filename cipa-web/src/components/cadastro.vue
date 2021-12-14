@@ -3,34 +3,40 @@
 <div class="division-1">
     <img src="https://i.imgur.com/HcLNjzn.png" class="logo">
     <div class="texts">
-        <p><mark>Olá</mark><br>por favor insira os dados<br>
-        do projeto para se cadastrar.</p>
+        <p><mark>Olá</mark><br>por favor insira os seus dados<br>
+        para entrar.</p>
     </div>
     <div class="agroup">
-      <div class="row">
-             <div class="input-field col s6">
+    <div class="row">
+        <div class="input-field col s6">
           <i class="material-icons prefix">person</i>
-          <input id="icon_prefix" type="text" class="validate" placeholder=" Nome completo:">
+          <input id="nomeCompleto" v-model="nomeCompleto" type="text" class="validate" placeholder="Nome Completo:">
         </div>
-        </div>
+      </div>
       <div class="row">
              <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
-          <input id="icon_prefix" type="text" class="validate" placeholder="E-mail institucional:">
+          <input id="login" v-bind:class="{'error' : !this.email.endsWith('discente.ifpe.edu.br')}" v-model="email" type="email" class="validate" placeholder="Digite seu email:">
         </div>
         </div>
           <div class="row">
           <div class="input-field col s6">
           <i class="material-icons prefix">vpn_key</i>
-          <input id="icon_prefix2" type="text" class="validate" placeholder="Senha:">
+          <input id="senha" v-model="senha" type="password" class="validate" placeholder="Digite sua senha:">
         </div>
         </div>
+            <div class="forgot-pass"> 
+      <p>Esqueceu sua senha?</p>
+    </div>
          <div class="row2">
          
-         <button class="btn waves-effect waves-light" type="submit" name="action">CADASTRAR
+         <button v-on:click="cadastrar()" :disabled="!email || !senha" class="btn waves-effect waves-light" type="submit" name="action">CADASTRAR
         <i class="material-icons right">send</i>
         </button>   
     </div>  
+                <div class="has-login"> 
+      <p>Você já tem uma conta? <a v-on:click="entre()">Entre.</a></p>
+    </div>
     <div class="media-icons">
       <i class="fa-brands fa-facebook"></i>
       <i class="fa-brands fa-twitter"></i>
@@ -49,19 +55,66 @@
 
 <script>
 export default {
-  name: 'Login',
-  props: {
-    msg: String
-  }
+  name: 'cadastro',
+  data() {
+    return {
+      email: '',
+      senha: '',
+    }
+  },
+  methods: {
+    cadastrar () { 
+      if(!this.email.endsWith('discente.ifpe.edu.br')){
+        alert("Apenas email do IFPE");
+      }
+        else if(this.email == 'admin@discente.ifpe.edu.br' && this.senha == '12345'){
+        alert('Cadastro realizado com sucesso');
+        this.$router.push('/login');
+      }
+      else{
+        alert('Login ou senha incorreto!!!')
+      }
+    },
+    entre(){
+      this.$router.push('/login')
+    }
+  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&family=Rubik+Mono+One&display=swap');;
+
             * {
     margin: 0;
     padding: 0;
+  }
+  .forgot-pass p{
+    color: #000080;
+    font-family: 'Poppins', Arial;
+    font-size: 14px;
+  }
+  .forgot-pass{
+    margin-left:57%;
+  }
+  .has-login p{
+        color: black;
+    font-family: 'Poppins', Arial;
+    font-size: 14px;
+  }
+  .has-login a{
+    background-color: transparent;
+    color: #000080;
+    font-family: 'Poppins', Arial;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .has-login{
+    margin-left: 43%;
+    margin-top: 2%;
   }
   html{
     padding: 0;
@@ -71,15 +124,17 @@ export default {
     margin: 0;
     padding: 0;
   }
-  
+  .error{
+    border: 1px solid red!important;
+  }
   .content-index {
     display: flex;
     width: 100%;
     height: 100vh;
   }
   .media-icons{
-    margin-left: 15%;
-    margin-top: 15%;
+    margin-left: 20%;
+    margin-top: 12%;
   }
   .subtitulo{
     font-family: 'Rubik', sans-serif;
@@ -101,7 +156,7 @@ export default {
     color: #3b5998;
   }
   .division-1 {
-    width:40vw;
+    width:43.3vw;
   }
   .division-1 img{
     width: 280px;
@@ -118,6 +173,8 @@ export default {
       color: #1B2F49;
       font-weight: bold;
       font-size: 26px;
+      cursor: pointer;
+
   }
   .logo{
     margin-bottom: 6%;
@@ -135,13 +192,13 @@ export default {
     width: 100vh;
   }
   .row2{
-    margin-left: 38%!important;
-    margin-top: 5%;
+    margin-left: 42%!important;
+    margin-top: 3%;
   }
   .row2 button{
       background-color: #1B2F49 !important;
-      padding-left: 38px;
-      padding-right: 35px;
+      padding-left: 45px;
+      padding-right: 45px;
   }
   
   .division-2 {
