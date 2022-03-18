@@ -36,7 +36,7 @@
             <option value="10">REDUÇÃO DAS DESIGUALDADES</option>
             <option value="11">CIDADES E COMUNIDADES SUSTENTÁVEIS</option>
             <option value="12">CONSUMO E PRODUÇÃO RESPONSÁVEIS</option>
-		      </select>
+</select>
         </div>
         </div>
         <div class="row">

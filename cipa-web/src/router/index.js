@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import home from '../components/home.vue'
 import cadastro from '../components/cadastro.vue'
-import login from '../components/login.vue'
+import login from '../components/Login.vue'
 import inscricaoProjeto from '../components/inscricaoProjeto.vue'
 
 const routes = [
